@@ -20,13 +20,13 @@ for (const element of data) {
     const liStatSpecDef = document.createElement('li')
     const liStatSpeed = document.createElement('li')
     let pokeStats = element.stats
-    for (stat of pokeStats) {
-        if (stat.stat.name === 'hp') liStatHP.innerText = `${stat.stat.name.toUpperCase()}: ${stat['base_stat']}`
-        if (stat.stat.name === 'attack') liStatAttack.innerText = `${stat.stat.name.toUpperCase()}: ${stat['base_stat']}`
-        if (stat.stat.name === 'defense') liStatDefense.innerText = `${stat.stat.name.toUpperCase()}: ${stat['base_stat']}`
-        if (stat.stat.name === 'special-attack') liStatSpecAtt.innerText = `${stat.stat.name.toUpperCase()}: ${stat['base_stat']}`
-        if (stat.stat.name === 'special-defense') liStatSpecDef.innerText = `${stat.stat.name.toUpperCase()}: ${stat['base_stat']}`
-        if (stat.stat.name === 'speed') liStatSpeed.innerText = `${stat.stat.name.toUpperCase()}: ${stat['base_stat']}`
+    for (pokeStat of pokeStats) {
+        if (pokeStat.stat.name === 'hp') liStatHP.innerText = `${pokeStat.stat.name.toUpperCase()}: ${pokeStat['base_stat']}`
+        if (pokeStat.stat.name === 'attack') liStatAttack.innerText = `${pokeStat.stat.name.toUpperCase()}: ${pokeStat['base_stat']}`
+        if (pokeStat.stat.name === 'defense') liStatDefense.innerText = `${pokeStat.stat.name.toUpperCase()}: ${pokeStat['base_stat']}`
+        if (pokeStat.stat.name === 'special-attack') liStatSpecAtt.innerText = `${pokeStat.stat.name.toUpperCase()}: ${pokeStat['base_stat']}`
+        if (pokeStat.stat.name === 'special-defense') liStatSpecDef.innerText = `${pokeStat.stat.name.toUpperCase()}: ${pokeStat['base_stat']}`
+        if (pokeStat.stat.name === 'speed') liStatSpeed.innerText = `${pokeStat.stat.name.toUpperCase()}: ${pokeStat['base_stat']}`
     }
     ulPokemonStats.append(liStatHP, liStatAttack, liStatDefense, liStatSpecAtt, liStatSpecDef, liStatSpeed)
 }
