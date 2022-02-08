@@ -1,5 +1,3 @@
-console.log(data[0])
-
 for (const element of data) {
     const ulCardElement = document.querySelector('ul')
     const liElement = document.createElement('li')
@@ -22,7 +20,7 @@ for (const element of data) {
     const liStatSpecDef = document.createElement('li')
     const liStatSpeed = document.createElement('li')
     const liGameVrs = document.createElement('li')
-    liGameVrs.innerText = element.game_indices[data.indexOf(element)].version.name
+    liGameVrs.innerText = `GAME VERSION: ${element.game_indices[data.indexOf(element)].version.name}`
     let pokeStats = element.stats
     for (pokeStat of pokeStats) {
         if (pokeStat.stat.name === 'hp') liStatHP.innerText = `${pokeStat.stat.name.toUpperCase()}: ${pokeStat['base_stat']}`
