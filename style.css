@@ -57,15 +57,11 @@ h2 {
 .card--text {
   margin: 0.2rem;
   padding: 1rem;
+  line-height: 2;
 
   border-radius: 5px;
   list-style: none;
 }
-
-.card--text li {
-  padding: 0.5rem 0rem
-}
-
 .card--img {
   display: block;
   margin: 0 auto;
